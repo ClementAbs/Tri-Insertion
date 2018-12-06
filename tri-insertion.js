@@ -1,9 +1,15 @@
-'use_strict'
 
 
 
-var t=[5,10,15,30,23,17,40,17,12,13,15,18,20,18,21,20,3,17,18,19];
 
+var t= new Array(); // Assigné a t la valeur 0
+
+
+ for(var i=0; i<19; i++)   // t est undefined
+ {
+t.push(prompt("Entrer 20 valeurs à trier entre 0 et 100"));
+console.log(t);
+ }
 
 function tri_insertion()
 {
@@ -23,3 +29,4 @@ function tri_insertion()
 tri_insertion(t);
 
 alert(t);
+ 
